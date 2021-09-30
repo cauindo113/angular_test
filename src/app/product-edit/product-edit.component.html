@@ -1,0 +1,12 @@
+<h2>Edit Book</h2>
+<form action="">
+    <label for="">title</label>
+    <input type="text" class="form-control" [(ngModel)]="product.title" name="title">
+    <label for="">price</label>
+    <input type="number" class="form-control" [(ngModel)]="product.price" name="price">
+    <label for="">desc</label>
+    <input type="text" class="form-control" [(ngModel)]="product.desc" name="desc">
+    <label for="">author</label>
+    <input type="text" class="form-control" [(ngModel)]="product.author " name="author ">
+    <button (click)="onUpdateProduct()" class="btn btn-primary">Edit Product</button>
+</form>

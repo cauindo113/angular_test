@@ -1,0 +1,21 @@
+<h2>List Book</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>title</th>
+            <th>price</th>
+            <th>desc</th>
+            <th>author</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.title}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.desc}}</td>
+            <td>{{product.author}}</td>
+            <td> <button (click)="onHandleRemove(product.id)" class="btn btn-danger">Remove</button></td>
+            <td> <button routerLink="/product/{{product.id}}/edit" class="btn btn-primary">Edit</button></td>
+        </tr>
+    </tbody>
+</table>
